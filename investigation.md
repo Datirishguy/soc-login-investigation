@@ -55,3 +55,17 @@ Recommended actions:
 5. Record all findings and actions taken.
 
 **Important:** An unauthorised login has not been confirmed by the fictional evidence alone. Further investigation is required.
+
+## 7. Overall Log Review
+
+A review of all 12 fictional log entries identified:
+
+- **8 failed logins** (Event ID 4625).
+- **4 successful logins** (Event ID 4624).
+- **3 failed login attempts** against the `admin` account between 09:04 and 09:06.
+- All three failed admin attempts originated from `192.0.2.10`.
+- No successful login to the `admin` account appears in the supplied dataset.
+
+The repeated failed attempts against the administrative account warrant further investigation. However, the available evidence does not confirm password guessing, malicious activity, or account compromise.
+
+**Overall assessment:** Suspicious activity identified; further investigation required.
