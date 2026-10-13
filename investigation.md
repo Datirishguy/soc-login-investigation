@@ -41,3 +41,17 @@ The three failed login attempts against the `admin` account should be flagged fo
 ## Disclaimer
 
 This is an educational project using fictional security log data. It does not represent a real security incident.
+
+## 6. Escalation and Incident Response
+
+If the administrator confirms that the successful login was not theirs, the activity should be treated as a potential account compromise.
+
+Recommended actions:
+
+1. Escalate the alert to the appropriate security team.
+2. Preserve relevant authentication logs for further investigation.
+3. Review activity following the successful login.
+4. Follow the organisation's incident response procedures.
+5. Record all findings and actions taken.
+
+**Important:** An unauthorised login has not been confirmed by the fictional evidence alone. Further investigation is required.
