@@ -32,11 +32,27 @@ No real user accounts, passwords or private organisational logs are used.
 
 ## Findings
 
-*Investigation pending — findings will be added after the sample logs have been analysed.*
+The review of 12 fictional Windows security events identified:
+
+- **8 failed logins** (Event ID 4625).
+- **4 successful logins** (Event ID 4624).
+- **3 consecutive failed login attempts** against the `admin` account between 09:04 and 09:06.
+- All three failed admin attempts originated from `192.0.2.10`.
+- No successful login to the `admin` account appears in the sample data.
+
+The repeated failed attempts against an administrative account warrant further investigation. However, the available evidence does not confirm an attack or account compromise.
+
+See [`investigation.md`](investigation.md) for the detailed investigation report.
 
 ## Recommendations
 
-*To be completed after reviewing the evidence.*
+- Review surrounding authentication events for additional suspicious activity.
+- Investigate the source IP address and determine whether the activity was expected.
+- Check for any successful logins following the failed attempts.
+- Preserve relevant logs and escalate the alert if further evidence suggests malicious activity.
+- Follow the organisation's incident response procedures.
+
+These are recommended investigative actions, not confirmation that an attack occurred.
 
 ## Disclaimer
 
