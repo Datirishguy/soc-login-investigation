@@ -77,7 +77,7 @@ A review of all 12 fictional log entries identified:
 - **3 failed login attempts** against the `admin` account between 09:04 and 09:06.
 - All three failed admin attempts originated from `192.0.2.10`.
 - No successful login to the `admin` account appears in the supplied dataset.
-
+- The jsmith account recorded successful logins from 192.0.2.10 at 09:01 and 09:12. These events occurred near the failed login activity and should be reviewed to establish whether they were expected.
 The repeated failed attempts against the administrative account warrant further investigation. However, the available evidence does not confirm password guessing, malicious activity, or account compromise.
 
 **Overall assessment:** Suspicious activity identified; further investigation required.
