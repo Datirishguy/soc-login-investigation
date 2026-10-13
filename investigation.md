@@ -70,14 +70,14 @@ Recommended actions:
 
 A review of all 12 fictional log entries identified:
 
-**Scope and limitations:** This assessment is based on 12 fictional Windows security events supplied for the exercise. The available dataset is limited and may not include all relevant authentication activity, host context, or supporting security telemetry. Findings are therefore preliminary and should be validated against additional logs and organisational context before drawing a final conclusion.
-
 - **8 failed logins** (Event ID 4625).
 - **4 successful logins** (Event ID 4624).
 - **3 failed login attempts** against the `admin` account between 09:04 and 09:06.
 - All three failed admin attempts originated from `192.0.2.10`.
 - No successful login to the `admin` account appears in the supplied dataset.
 - The `jsmith` account recorded successful logins from `192.0.2.10` at 09:01 and 09:12. These events occurred near the failed login activity and should be reviewed to establish whether they were expected.
+
+**Scope and limitations:** This assessment is based on 12 fictional Windows security events supplied for the exercise. The available dataset is limited and may not include all relevant authentication activity, host context, or supporting security telemetry. Findings are therefore preliminary and should be validated against additional logs and organisational context before drawing a final conclusion.
 
 **Overall assessment:** Repeated failed logins against the `admin` account and additional authentication activity involving `jsmith` were identified from the same source IP address, `192.0.2.10`. The dataset does not establish whether the activity was malicious or whether any account was compromised. Review the surrounding authentication events, validate whether the successful `jsmith` logins were expected, and escalate according to organisational procedures if further evidence supports a security incident.
 
